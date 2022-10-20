@@ -21,7 +21,7 @@
                         {% for body in body_list %}
                         <br>
                         <div class="border-bottom border-secondary h-auto">
-                            <b>{{ body.name }}</b> : {{ body.body }}
+                            <b>{{ body.name | safe }}</b> : {{ body.body | safe }}
                         </div>
                         {% endfor %}
                     </div>
